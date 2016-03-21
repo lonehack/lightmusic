@@ -2,7 +2,7 @@
 Play sound from detected light
 
 A simple C++ code to locate brightest pixel for frequency and amplitude
-and play sound with OpenCV 2.4 and libasound.
+and play sine wave sound with OpenCV 2.4 and libasound.
 
 Command: LightMusic <camera_number> <buffer_length> <low_freq> <hi_freq>
 ex : LightMusic 1 5620 261 1760
