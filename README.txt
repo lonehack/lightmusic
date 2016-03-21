@@ -2,7 +2,7 @@
 Play sound from detected light
 
 A simple C++ code to locate brightest pixel for frequency and amplitude
-and play sound with OpenCV and Alsa.
+and play sound with OpenCV 2.4 and libasound.
 
 Command: LightMusic <camera_number> <buffer_length> <low_freq> <hi_freq>
 ex : LightMusic 1 5620 261 1760
@@ -14,3 +14,6 @@ ex : LightMusic 1 5620 261 1760
 bigger number of buffer length, slower frame scan run
 smaller number of buffer length, bigger playback sound glitch occur
 find right number of buffer length depending on your device
+
+Compile :
+      g++ camtest.cpp -lasound -o camtest.o `pkg-config --cflags --libs opencv`
